@@ -7,7 +7,7 @@ from django.core.files import File
 AWS_ACCESS_KEY_ID = 'XXXXXXXXXXXXXXXXXX'
 AWS_SECRET_ACCESS_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 
-react_app_build_path = '/home/jay/workspace/fl/'
+react_app_build_path = 'react-project/dist'
 
 bucket_name = 'test-bucket'
 # bucket_name = 'prod-bucket'
@@ -59,4 +59,4 @@ for key in os.listdir(react_app_build_path):
                       ACL='public-read', ContentType=get_content_type(key))
     print('File uploaded', key)
 
-print("{} Deployment Success!!!!!!!!!!!!!!!!".format(bucket_name))
+print("{} Files back-up and latest upload Success!!!!!!!!!!!!!!!!".format(bucket_name))
